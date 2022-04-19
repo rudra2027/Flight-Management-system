@@ -1,0 +1,5 @@
+package FlightSearch.pojo;
+
+public class Seats {
+
+}

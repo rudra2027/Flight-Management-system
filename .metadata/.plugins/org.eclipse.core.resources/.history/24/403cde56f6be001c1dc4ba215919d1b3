@@ -1,0 +1,11 @@
+package FlightSearch.repository;
+
+import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.stereotype.Repository;
+
+import FlightSearch.pojo.Flight;
+
+@Repository
+public interface FlightSearchRepository extends MongoRepository<Flight,Integer> {
+
+}

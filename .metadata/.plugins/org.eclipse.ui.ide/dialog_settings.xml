@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="installedFeatures">
+		<item value="com.ianbrandt.tools.m2e.mdp.feature:0.0.4.201409291703"/>
+		<item value="net.mihai-nita.ansicon:1.4.6.202112080311"/>
+		<item value="org.eclipse.buildship:3.1.5.v20210113-0929"/>
+		<item value="org.eclipse.egit.gitflow.feature:6.0.0.202111291000-r"/>
+		<item value="org.eclipse.egit:6.0.0.202111291000-r"/>
+		<item value="org.eclipse.emf.common:2.24.0.v20210924-1718"/>
+		<item value="org.eclipse.emf.ecore:2.26.0.v20210924-1718"/>
+		<item value="org.eclipse.epp.mpc:1.9.2.v20210826-0851"/>
+		<item value="org.eclipse.help:2.3.800.v20211124-1800"/>
+		<item value="org.eclipse.jdt:3.18.1000.v20211124-1800"/>
+		<item value="org.eclipse.jgit.gpg.bc:6.0.0.202111291000-r"/>
+		<item value="org.eclipse.jgit.http.apache:6.0.0.202111291000-r"/>
+		<item value="org.eclipse.jgit.lfs:6.0.0.202111291000-r"/>
+		<item value="org.eclipse.jgit.ssh.apache:6.0.0.202111291000-r"/>
+		<item value="org.eclipse.jgit:6.0.0.202111291000-r"/>
+		<item value="org.eclipse.jst.common.fproj.enablement.jdt:3.24.0.v202111201707"/>
+		<item value="org.eclipse.justj.openjdk.hotspot.jre.full:17.0.1.v20211116-1657"/>
+		<item value="org.eclipse.m2e.feature:1.19.0.20211116-0804"/>
+		<item value="org.eclipse.m2e.logback.feature:1.17.2.20211002-1029"/>
+		<item value="org.eclipse.m2e.wtp.feature:1.4.4.20201128-1705"/>
+		<item value="org.eclipse.mylyn.wikitext.editors_feature:3.0.42.202201072301"/>
+		<item value="org.eclipse.pde:3.14.1000.v20211124-1800"/>
+		<item value="org.eclipse.platform:4.22.0.v20211124-1800"/>
+		<item value="org.eclipse.rcp:4.22.0.v20211124-1800"/>
+		<item value="org.eclipse.tm.terminal.connector.ssh.feature:10.5.0.202109270023"/>
+		<item value="org.eclipse.tm.terminal.control.feature:10.5.0.202109270023"/>
+		<item value="org.eclipse.tm.terminal.feature:10.5.0.202109270023"/>
+		<item value="org.eclipse.tm.terminal.view.feature:10.5.0.202110140133"/>
+		<item value="org.eclipse.userstorage:1.2.0.v20210517-0327"/>
+		<item value="org.eclipse.wst.common.fproj:3.7.3.v202111212041"/>
+		<item value="org.jboss.tools.m2e.wro4j.feature:1.1.0.201406251020"/>
+		<item value="org.jboss.tools.maven.apt.feature:1.5.2.201812241535"/>
+		<item value="org.sonatype.m2e.buildhelper.feature:0.15.0.201207090124"/>
+		<item value="org.sonatype.m2e.mavenarchiver.feature:0.17.5.202002191804"/>
+	</list>
+</section>
