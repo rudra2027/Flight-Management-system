@@ -1,22 +1,34 @@
 package FlightSearch.pojo;
 
 public class Seats {
+private int seat_id;
 private String status;
 private int capacity;
 private int rate;
 public Seats() {}
 
-public Seats(String status, int capacity, int rate) {
+public Seats(int seat_id,String status, int capacity, int rate) {
 	super();
-	status = status;
+	this.seat_id=seat_id;
+	this.status = status;
 	this.capacity = capacity;
 	this.rate = rate;
 }
+
+
+public int getSeat_id() {
+	return seat_id;
+}
+
+public void setSeat_id(int seat_id) {
+	this.seat_id = seat_id;
+}
+
 public String getStatus() {
 	return status;
 }
 public void setStatus(String status) {
-	status = status;
+	this.status = status;
 }
 public int getCapacity() {
 	return capacity;

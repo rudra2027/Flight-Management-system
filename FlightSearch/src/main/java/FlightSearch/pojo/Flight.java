@@ -11,19 +11,17 @@ public class Flight {
 private int id;
 private String departure_location;
 private String arrival_location;
-private String departure_date;
 private  List<FlightData> flight;
 
 public Flight() {}
 
 
-public Flight(int id, String departure_location, String arrival_location, String departure_date,
+public Flight(int id, String departure_location, String arrival_location,
 		List<FlightData> flight) {
 	super();
 	this.id = id;
 	this.departure_location = departure_location;
 	this.arrival_location = arrival_location;
-	this.departure_date = departure_date;
 	this.flight = flight;
 }
 public int getId() {
@@ -44,12 +42,7 @@ public String getArrival_location() {
 public void setArrival_location(String arrival_location) {
 	this.arrival_location = arrival_location;
 }
-public String getDeparture_date() {
-	return departure_date;
-}
-public void setDeparture_date(String departure_date) {
-	this.departure_date = departure_date;
-}
+
 public List<FlightData> getFlight() {
 	return flight;
 }
