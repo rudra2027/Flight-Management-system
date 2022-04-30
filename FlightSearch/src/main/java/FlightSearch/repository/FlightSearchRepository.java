@@ -14,6 +14,15 @@ import FlightSearch.pojo.FlightData;
 public interface FlightSearchRepository extends MongoRepository<Flight,Integer> {
 	@Query("{'departure_location' : :#{#departure_location}, 'arrival_location' : :#{#arrival_location}}")
 	List<Flight> findByData(@Param("departure_location") String departure_location, @Param("arrival_location") String arrival_location);
+
 	
+	@Query("{'flight.flight_id':?0}")
+	List<Flight> findByFlight_Id(@Param ("flight_id")int flight_id );
+	
+
+	 
+		
 	
 }
+
+

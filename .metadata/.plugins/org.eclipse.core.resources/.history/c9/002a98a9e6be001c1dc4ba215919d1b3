@@ -1,5 +1,0 @@
-package FlightSearch.repository;
-
-public interface FlightSearchRepository {
-
-}
