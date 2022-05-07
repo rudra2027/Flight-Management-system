@@ -8,6 +8,7 @@ import java.util.Date;
 import java.util.List;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -22,22 +23,23 @@ public long booking_id;
 
 public Date departure_date;
 public LocalDate booking_date;
-public Flight flight;//web client fetch
+@DBRef
+public FlightData flight;
 public List<Passenger>passenger=new ArrayList<>();
 public double total_amount;
 public int otp;
 @Field
 public boolean booking_cancelled= false;
 public boolean checked_in= false;
-
+public String payment_completed;
 
 public Booking() {}
 
 
 
 
-public Booking(long booking_id, Date departure_date, LocalDate booking_date, Flight flight,
-		List<Passenger> passenger, int otp, boolean booking_cancelled, boolean checked_in,double total_amount) {
+public Booking(long booking_id, Date departure_date, LocalDate booking_date, FlightData flight,
+		List<Passenger> passenger, int otp, boolean booking_cancelled, boolean checked_in,double total_amount,String payment_completed) {
 	super();
 	this.booking_id=booking_id;
 	this.departure_date = departure_date;
@@ -48,6 +50,7 @@ public Booking(long booking_id, Date departure_date, LocalDate booking_date, Fli
 	this.booking_cancelled = booking_cancelled;
 	this.checked_in = checked_in;
 	this.total_amount=total_amount;
+	this.payment_completed=payment_completed;
 }
 
 
@@ -72,10 +75,10 @@ public LocalDate getBooking_date() {
 public void setBooking_date(LocalDate booking_date) {
 	this.booking_date = booking_date;
 }
-public Flight getFlight() {
+public FlightData getFlight() {
 	return flight;
 }
-public void setFlight(Flight flight) {
+public void setFlight(FlightData flight) {
 	this.flight = flight;
 }
 public List<Passenger> getPassenger() {
@@ -119,12 +122,21 @@ public void setTotal_amount(double total_amount) {
 
 
 
-/*
- * public void setTotal_amount(double total_amount) { double[] arr = new
- * double[passenger.size()]; double amount=0; int pas_count=passenger.size();
- * for(int i=0;i<=pas_count;i++) { arr[i] = passenger.get(i).amount; } for(int
- * j=0;j<=arr.length;j++) { amount+=arr[j]; } this.total_amount=amount; }
- */
+public String isPayment_completed() {
+	return payment_completed;
+}
+
+
+
+
+public void setPayment_completed(String payment_completed) {
+	this.payment_completed = payment_completed;
+}
+
+
+
+
+
 
 
 

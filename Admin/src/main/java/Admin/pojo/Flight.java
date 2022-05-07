@@ -2,18 +2,17 @@ package Admin.pojo;
 
 import java.util.List;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import nonapi.io.github.classgraph.json.Id;
-
-
-
-@Document(collection = "Trains")
+@Document(collection="flights")
 public class Flight {
 @Id
 private int id;
 private String departure_location;
 private String arrival_location;
+@DBRef
 private  List<FlightData> flight;
 
 public Flight() {}

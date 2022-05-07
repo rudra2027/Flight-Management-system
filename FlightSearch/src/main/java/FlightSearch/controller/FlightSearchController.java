@@ -2,8 +2,10 @@ package FlightSearch.controller;
 
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -14,14 +16,17 @@ import org.springframework.web.bind.annotation.RestController;
 
 import FlightSearch.pojo.Flight;
 import FlightSearch.pojo.FlightData;
+import FlightSearch.repository.FlightDataRepository;
 import FlightSearch.repository.FlightSearchRepository;
 
 @RestController
 @RequestMapping("/Search")
+@CrossOrigin(origins = "*", maxAge = 3600)
 public class FlightSearchController {
 	@Autowired
 	public FlightSearchRepository frepo;
-	
+	@Autowired
+	public FlightDataRepository fdrepo;
 	//Getting List Of all flights 
 	
 	@GetMapping("/allFlights")
@@ -40,8 +45,10 @@ public class FlightSearchController {
 	//error:giving whole flight but need flight data!!!!
 	
 	@GetMapping("/findFlight/{flight_id}")
-	public List<Flight> getFlight(@PathVariable("flight_id") int flight_id){
-	return frepo.findByFlight_Id(flight_id);
+	public Stream<Object> getFlight(@PathVariable("flight_id") int flight_id){
+		List<Flight> flight=frepo.findByFlight_Id(flight_id);
+		
+	return flight.stream().map(d->d.getFlight())  ;
 	
 	}
 	
@@ -54,12 +61,18 @@ public class FlightSearchController {
 	return "Added Flight:" +flight.getFlight();
 	}
 	
+	@PostMapping("/addFlightData")
+	public String addFlightData(@RequestBody FlightData flight) {
+		fdrepo.save(flight);
+		return "Added Flight: "+flight.getFlight_id();
+	
+	}
 	// For Admin to update Flight
 	
 	@PutMapping("/updateFlightsData/{id}")
-	public Flight updateFlight(@RequestBody Flight flight,@PathVariable("id") int flights_id){
-		flight.setId(flights_id);
-		frepo.save(flight);
+	public FlightData updateFlight(@RequestBody FlightData flight,@PathVariable("id") int flights_id){
+		flight.setFlight_id(flights_id);
+		fdrepo.save(flight);
 		return flight;
 		
 	}

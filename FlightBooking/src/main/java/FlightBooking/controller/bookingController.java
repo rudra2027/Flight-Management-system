@@ -11,6 +11,7 @@ import org.springframework.cloud.client.loadbalancer.Response;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -31,6 +32,7 @@ import reactor.core.publisher.Mono;
 
 @RestController
 @RequestMapping("/FlightBooking")
+@CrossOrigin(origins = "*", maxAge = 3600)
 public class bookingController {
 	
  @Autowired
@@ -59,7 +61,7 @@ EmailService emailService;
 
 // For user to book flight and amount being set according to seat-passenger details
 
-@PostMapping("/BookFlight")
+@PostMapping("/BookFlight/")
 public String bookFlight(@RequestBody Booking booking)
 {
 	booking.setTotal_amount(setTotal_amount(booking));
@@ -98,6 +100,7 @@ public Booking updateBooking(@RequestBody Booking booking,@PathVariable("booking
 	 
 }
 //Setting total amount for payment gateway fetched from passenger data 
+
 public double setTotal_amount(Booking booking) {
 	double tot_sum=0;
 List<Passenger> list=	booking.getPassenger();

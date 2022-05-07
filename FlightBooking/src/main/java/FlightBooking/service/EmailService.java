@@ -15,12 +15,11 @@ public class EmailService {
 
 	public String sendEmail(Booking booking) {
 		SimpleMailMessage message = new SimpleMailMessage();
-		
 		message.setFrom("rudransh3067@gmail.com");
 		//Taking user mail via Rest Template from user Db/Security Microservice
 		message.setTo("rudra1234ag@gmail.com");
 		message.setSubject("Booking Confirmation Mail");
-		message.setText("Successfull Booking With PNR Number: "+booking.getBooking_id()+",  Passeger Details: "+booking.getPassenger()+",  Departue Details: "+booking.getDeparture_date() );
+		message.setText("Successfull Booking With PNR Number: "+booking.getBooking_id() +",  Passegers: "+booking.getPassenger().size()+",  Departue Details: "+booking.getDeparture_date() );
 		
 		javaMailSender.send(message);
 		

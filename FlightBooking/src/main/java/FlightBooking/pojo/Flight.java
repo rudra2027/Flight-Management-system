@@ -3,6 +3,7 @@ package FlightBooking.pojo;
 import java.util.List;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection="flights")
@@ -11,6 +12,7 @@ public class Flight {
 private int id;
 private String departure_location;
 private String arrival_location;
+@DBRef
 private  List<FlightData> flight;
 
 public Flight() {}
