@@ -13,11 +13,11 @@ public class EmailService {
 	@Autowired
 	JavaMailSender javaMailSender;
 
-	public String sendEmail(Booking booking) {
+	public String sendEmail(Booking booking,String mailId) {
 		SimpleMailMessage message = new SimpleMailMessage();
 		message.setFrom("rudransh3067@gmail.com");
 		//Taking user mail via Rest Template from user Db/Security Microservice
-		message.setTo("rudra1234ag@gmail.com");
+		message.setTo(mailId);
 		message.setSubject("Booking Confirmation Mail");
 		message.setText("Successfull Booking With PNR Number: "+booking.getBooking_id() +",  Passegers: "+booking.getPassenger().size()+",  Departue Details: "+booking.getDeparture_date() );
 		
@@ -26,11 +26,11 @@ public class EmailService {
 		return "Booking Mail sent successfully";
 	}
 
-	public Booking checkIn(Booking booking) {
+	public Booking checkIn(Booking booking,String mailId) {
 		SimpleMailMessage message = new SimpleMailMessage();
 		message.setFrom("rudransh3067@gmail.com");
 		//Taking user mail via Rest Template from user Db/Security Microservice
-		message.setTo("rudra1234ag@gmail.com");
+		message.setTo(mailId);
 		message.setSubject("Checked-In");
 		message.setText("Successfull Check-In With PNR Number: "+booking.getBooking_id());
 		
@@ -40,11 +40,11 @@ public class EmailService {
 		
 	}
 
-	public Booking bookingCancelled(Booking booking) {
+	public Booking bookingCancelled(Booking booking,String mailId) {
 		SimpleMailMessage message = new SimpleMailMessage();
 		message.setFrom("rudransh3067@gmail.com");
 		//Taking user mail via Rest Template from user Db/Security Microservice
-		message.setTo("rudra1234ag@gmail.com");
+		message.setTo(mailId);
 		message.setSubject("Booking Cancelled");
 		message.setText("Booking Cancelled for PNR Number: "+booking.getBooking_id()+" If Paid Respective Refund will be initiated shortly (Terms & Conditions Applied)  ");
 		

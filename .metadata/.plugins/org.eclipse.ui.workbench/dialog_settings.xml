@@ -3,8 +3,9 @@
 	<section name="ImportExportAction">
 	</section>
 	<section name="NewWizardAction">
-		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.springsource.ide.eclipse.commons.gettingstarted.wizard.boot.NewSpringBootWizard"/>
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.ui.wizards.new.file"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.ui.Basic"/>
 			<item value="org.springsource.ide.eclipse.boot.wizards.category"/>
 		</list>
 	</section>

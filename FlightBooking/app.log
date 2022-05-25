@@ -1,0 +1,198 @@
+2022-05-17 14:10:20,984 INFO FlightBooking.FlightBookingApplication [restartedMain] Starting FlightBookingApplication using Java 17.0.1 on LAPTOP-QM5VIR48 with PID 9928 (C:\Users\Asus\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\Flight Mnagement System\FlightBooking\target\classes started by Asus in C:\Users\Asus\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\Flight Mnagement System\FlightBooking)
+2022-05-17 14:10:21,020 INFO FlightBooking.FlightBookingApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2022-05-17 14:10:32,725 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2022-05-17 14:10:32,737 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-05-17 14:10:33,669 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-05-17 14:10:36,943 INFO org.mongodb.driver.cluster [restartedMain] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-05-17 14:10:37,315 INFO org.mongodb.driver.connection [cluster-rtt-ClusterId{value='62835f848943e074e643aa10', description='null'}-localhost:27017] Opened connection [connectionId{localValue:1, serverValue:19}] to localhost:27017
+2022-05-17 14:10:37,317 INFO org.mongodb.driver.connection [cluster-ClusterId{value='62835f848943e074e643aa10', description='null'}-localhost:27017] Opened connection [connectionId{localValue:2, serverValue:18}] to localhost:27017
+2022-05-17 14:10:37,318 INFO org.mongodb.driver.cluster [cluster-ClusterId{value='62835f848943e074e643aa10', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=70686800}
+2022-05-17 14:10:53,770 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+2022-05-17 14:10:53,789 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2022-05-17 14:10:53,881 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Disable delta property : false
+2022-05-17 14:10:53,881 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2022-05-17 14:10:53,882 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Force full registry fetch : false
+2022-05-17 14:10:53,882 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application is null : false
+2022-05-17 14:10:53,883 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2022-05-17 14:10:53,883 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application version is -1: true
+2022-05-17 14:10:53,884 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2022-05-17 14:10:54,819 INFO com.netflix.discovery.DiscoveryClient [restartedMain] The response status is 200
+2022-05-17 14:10:54,830 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2022-05-17 14:10:54,838 INFO com.netflix.discovery.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-05-17 14:10:54,874 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1652776854870 with initial instances count: 2
+2022-05-17 14:10:54,881 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1652776854881, current=UP, previous=STARTING]
+2022-05-17 14:10:54,906 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_FLIGHT-BOOKING/host.docker.internal:Flight-Booking:8082: registering service...
+2022-05-17 14:10:55,104 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_FLIGHT-BOOKING/host.docker.internal:Flight-Booking:8082 - registration status: 204
+2022-05-17 14:10:55,583 INFO FlightBooking.FlightBookingApplication [restartedMain] Started FlightBookingApplication in 38.132 seconds (JVM running for 42.579)
+2022-05-17 14:15:54,070 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-17 14:16:01,663 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8082-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-17 14:16:02,567 INFO FlightBooking.controller.bookingController [http-nio-8082-exec-2] Making the booking  with pnr:686
+2022-05-17 14:16:03,313 INFO org.mongodb.driver.connection [http-nio-8082-exec-2] Opened connection [connectionId{localValue:3, serverValue:24}] to localhost:27017
+2022-05-17 14:16:03,396 INFO FlightBooking.controller.bookingController [http-nio-8082-exec-2] Made the booking  with pnr:686
+2022-05-17 14:19:31,902 INFO com.netflix.discovery.DiscoveryClient [Thread-1] Saw local status change event StatusChangeEvent [timestamp=1652777371902, current=DOWN, previous=UP]
+2022-05-17 14:19:31,903 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_FLIGHT-BOOKING/host.docker.internal:Flight-Booking:8082: registering service...
+2022-05-17 14:19:31,924 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_FLIGHT-BOOKING/host.docker.internal:Flight-Booking:8082 - registration status: 204
+2022-05-17 14:19:32,383 INFO com.netflix.discovery.DiscoveryClient [Thread-1] Shutting down DiscoveryClient ...
+2022-05-17 14:19:35,421 INFO com.netflix.discovery.DiscoveryClient [Thread-1] Unregistering ...
+2022-05-17 14:19:35,711 INFO com.netflix.discovery.DiscoveryClient [Thread-1] DiscoveryClient_FLIGHT-BOOKING/host.docker.internal:Flight-Booking:8082 - deregister  status: 200
+2022-05-17 14:19:35,747 INFO com.netflix.discovery.DiscoveryClient [Thread-1] Completed shut down of DiscoveryClient
+2022-05-17 14:19:36,655 INFO FlightBooking.FlightBookingApplication [restartedMain] Starting FlightBookingApplication using Java 17.0.1 on LAPTOP-QM5VIR48 with PID 9928 (C:\Users\Asus\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\Flight Mnagement System\FlightBooking\target\classes started by Asus in C:\Users\Asus\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\Flight Mnagement System\FlightBooking)
+2022-05-17 14:19:36,655 INFO FlightBooking.FlightBookingApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2022-05-17 14:19:37,571 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2022-05-17 14:19:37,572 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-05-17 14:19:37,647 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-05-17 14:19:37,693 INFO org.mongodb.driver.cluster [restartedMain] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-05-17 14:19:37,699 INFO org.mongodb.driver.connection [cluster-rtt-ClusterId{value='628361a18943e074e643aa12', description='null'}-localhost:27017] Opened connection [connectionId{localValue:5, serverValue:25}] to localhost:27017
+2022-05-17 14:19:37,725 INFO org.mongodb.driver.connection [cluster-ClusterId{value='628361a18943e074e643aa12', description='null'}-localhost:27017] Opened connection [connectionId{localValue:4, serverValue:26}] to localhost:27017
+2022-05-17 14:19:37,726 INFO org.mongodb.driver.cluster [cluster-ClusterId{value='628361a18943e074e643aa12', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=29452400}
+2022-05-17 14:19:39,656 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+2022-05-17 14:19:39,657 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2022-05-17 14:19:39,683 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Disable delta property : false
+2022-05-17 14:19:39,684 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2022-05-17 14:19:39,684 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Force full registry fetch : false
+2022-05-17 14:19:39,684 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application is null : false
+2022-05-17 14:19:39,684 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2022-05-17 14:19:39,684 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application version is -1: true
+2022-05-17 14:19:39,685 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2022-05-17 14:19:39,755 INFO com.netflix.discovery.DiscoveryClient [restartedMain] The response status is 200
+2022-05-17 14:19:39,757 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2022-05-17 14:19:39,759 INFO com.netflix.discovery.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-05-17 14:19:39,762 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1652777379762 with initial instances count: 5
+2022-05-17 14:19:39,764 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1652777379764, current=UP, previous=STARTING]
+2022-05-17 14:19:39,764 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_FLIGHT-BOOKING/host.docker.internal:Flight-Booking:8082: registering service...
+2022-05-17 14:19:39,881 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_FLIGHT-BOOKING/host.docker.internal:Flight-Booking:8082 - registration status: 204
+2022-05-17 14:19:40,243 INFO FlightBooking.FlightBookingApplication [restartedMain] Started FlightBookingApplication in 3.954 seconds (JVM running for 567.238)
+2022-05-17 14:19:40,462 INFO com.netflix.discovery.DiscoveryClient [Thread-7] Saw local status change event StatusChangeEvent [timestamp=1652777380462, current=DOWN, previous=UP]
+2022-05-17 14:19:40,462 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_FLIGHT-BOOKING/host.docker.internal:Flight-Booking:8082: registering service...
+2022-05-17 14:19:40,468 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_FLIGHT-BOOKING/host.docker.internal:Flight-Booking:8082 - registration status: 204
+2022-05-17 14:19:40,492 INFO com.netflix.discovery.DiscoveryClient [Thread-7] Shutting down DiscoveryClient ...
+2022-05-17 14:19:43,507 INFO com.netflix.discovery.DiscoveryClient [Thread-7] Unregistering ...
+2022-05-17 14:19:43,512 INFO com.netflix.discovery.DiscoveryClient [Thread-7] DiscoveryClient_FLIGHT-BOOKING/host.docker.internal:Flight-Booking:8082 - deregister  status: 200
+2022-05-17 14:19:43,516 INFO com.netflix.discovery.DiscoveryClient [Thread-7] Completed shut down of DiscoveryClient
+2022-05-17 14:19:45,027 INFO FlightBooking.FlightBookingApplication [restartedMain] Starting FlightBookingApplication using Java 17.0.1 on LAPTOP-QM5VIR48 with PID 9928 (C:\Users\Asus\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\Flight Mnagement System\FlightBooking\target\classes started by Asus in C:\Users\Asus\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\Flight Mnagement System\FlightBooking)
+2022-05-17 14:19:45,027 INFO FlightBooking.FlightBookingApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2022-05-17 14:19:45,789 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2022-05-17 14:19:45,789 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-05-17 14:19:45,985 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-05-17 14:19:46,072 INFO org.mongodb.driver.cluster [restartedMain] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-05-17 14:19:46,078 INFO org.mongodb.driver.connection [cluster-ClusterId{value='628361aa8943e074e643aa13', description='null'}-localhost:27017] Opened connection [connectionId{localValue:6, serverValue:27}] to localhost:27017
+2022-05-17 14:19:46,078 INFO org.mongodb.driver.cluster [cluster-ClusterId{value='628361aa8943e074e643aa13', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3026400}
+2022-05-17 14:19:46,078 INFO org.mongodb.driver.connection [cluster-rtt-ClusterId{value='628361aa8943e074e643aa13', description='null'}-localhost:27017] Opened connection [connectionId{localValue:7, serverValue:28}] to localhost:27017
+2022-05-17 14:19:47,920 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+2022-05-17 14:19:47,921 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2022-05-17 14:19:47,923 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Disable delta property : false
+2022-05-17 14:19:47,924 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2022-05-17 14:19:47,924 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Force full registry fetch : false
+2022-05-17 14:19:47,924 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application is null : false
+2022-05-17 14:19:47,924 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2022-05-17 14:19:47,925 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application version is -1: true
+2022-05-17 14:19:47,925 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2022-05-17 14:19:47,957 INFO com.netflix.discovery.DiscoveryClient [restartedMain] The response status is 200
+2022-05-17 14:19:47,959 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2022-05-17 14:19:47,960 INFO com.netflix.discovery.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-05-17 14:19:47,961 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1652777387961 with initial instances count: 5
+2022-05-17 14:19:47,962 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1652777387962, current=UP, previous=STARTING]
+2022-05-17 14:19:47,963 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_FLIGHT-BOOKING/host.docker.internal:Flight-Booking:8082: registering service...
+2022-05-17 14:19:48,010 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_FLIGHT-BOOKING/host.docker.internal:Flight-Booking:8082 - registration status: 204
+2022-05-17 14:19:48,344 INFO FlightBooking.FlightBookingApplication [restartedMain] Started FlightBookingApplication in 3.459 seconds (JVM running for 575.339)
+2022-05-17 14:20:48,742 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8082-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-17 14:20:48,746 INFO FlightBooking.controller.bookingController [http-nio-8082-exec-1] getting Ticket: 686
+2022-05-17 14:20:48,751 INFO org.mongodb.driver.connection [http-nio-8082-exec-1] Opened connection [connectionId{localValue:8, serverValue:29}] to localhost:27017
+2022-05-17 14:21:06,620 INFO FlightBooking.controller.bookingController [http-nio-8082-exec-2] Saving Changes In Booked Ticket Of Booking Cancelled/ CheckIn: 686
+2022-05-17 14:21:06,637 INFO FlightBooking.controller.bookingController [http-nio-8082-exec-2] Updated CheckIn Status
+2022-05-17 14:21:47,534 INFO FlightBooking.controller.bookingController [http-nio-8082-exec-4] Saving Changes In Booked Ticket Of Booking Cancelled/ CheckIn: 686
+2022-05-17 14:21:47,536 INFO FlightBooking.controller.bookingController [http-nio-8082-exec-4] Updated Booking Cancelled Status
+2022-05-17 14:24:47,932 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-17 14:26:46,861 INFO org.springdoc.api.AbstractOpenApiResource [http-nio-8082-exec-6] Init duration for springdoc-openapi is: 489 ms
+2022-05-17 14:28:51,135 INFO com.netflix.discovery.DiscoveryClient [Thread-13] Saw local status change event StatusChangeEvent [timestamp=1652777931135, current=DOWN, previous=UP]
+2022-05-17 14:28:51,136 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_FLIGHT-BOOKING/host.docker.internal:Flight-Booking:8082: registering service...
+2022-05-17 14:28:51,141 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_FLIGHT-BOOKING/host.docker.internal:Flight-Booking:8082 - registration status: 204
+2022-05-17 14:28:51,154 INFO com.netflix.discovery.DiscoveryClient [Thread-13] Shutting down DiscoveryClient ...
+2022-05-17 14:28:54,161 INFO com.netflix.discovery.DiscoveryClient [Thread-13] Unregistering ...
+2022-05-17 14:28:54,166 INFO com.netflix.discovery.DiscoveryClient [Thread-13] DiscoveryClient_FLIGHT-BOOKING/host.docker.internal:Flight-Booking:8082 - deregister  status: 200
+2022-05-17 14:28:54,169 INFO com.netflix.discovery.DiscoveryClient [Thread-13] Completed shut down of DiscoveryClient
+2022-05-17 14:28:54,509 INFO FlightBooking.FlightBookingApplication [restartedMain] Starting FlightBookingApplication using Java 17.0.1 on LAPTOP-QM5VIR48 with PID 9928 (C:\Users\Asus\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\Flight Mnagement System\FlightBooking\target\classes started by Asus in C:\Users\Asus\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\Flight Mnagement System\FlightBooking)
+2022-05-17 14:28:54,509 INFO FlightBooking.FlightBookingApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2022-05-17 14:28:54,974 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2022-05-17 14:28:54,975 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-05-17 14:28:55,045 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-05-17 14:28:55,066 INFO org.mongodb.driver.cluster [restartedMain] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-05-17 14:28:55,078 INFO org.mongodb.driver.connection [cluster-ClusterId{value='628363cf8943e074e643aa14', description='null'}-localhost:27017] Opened connection [connectionId{localValue:9, serverValue:31}] to localhost:27017
+2022-05-17 14:28:55,078 INFO org.mongodb.driver.connection [cluster-rtt-ClusterId{value='628363cf8943e074e643aa14', description='null'}-localhost:27017] Opened connection [connectionId{localValue:10, serverValue:30}] to localhost:27017
+2022-05-17 14:28:55,079 INFO org.mongodb.driver.cluster [cluster-ClusterId{value='628363cf8943e074e643aa14', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=9099400}
+2022-05-17 14:28:56,363 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+2022-05-17 14:28:56,363 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2022-05-17 14:28:56,365 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Disable delta property : false
+2022-05-17 14:28:56,365 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2022-05-17 14:28:56,365 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Force full registry fetch : false
+2022-05-17 14:28:56,365 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application is null : false
+2022-05-17 14:28:56,365 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2022-05-17 14:28:56,365 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application version is -1: true
+2022-05-17 14:28:56,365 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2022-05-17 14:28:56,387 INFO com.netflix.discovery.DiscoveryClient [restartedMain] The response status is 200
+2022-05-17 14:28:56,388 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2022-05-17 14:28:56,389 INFO com.netflix.discovery.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-05-17 14:28:56,390 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1652777936390 with initial instances count: 5
+2022-05-17 14:28:56,390 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1652777936390, current=UP, previous=STARTING]
+2022-05-17 14:28:56,391 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_FLIGHT-BOOKING/host.docker.internal:Flight-Booking:8082: registering service...
+2022-05-17 14:28:56,616 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_FLIGHT-BOOKING/host.docker.internal:Flight-Booking:8082 - registration status: 204
+2022-05-17 14:28:56,720 INFO FlightBooking.FlightBookingApplication [restartedMain] Started FlightBookingApplication in 2.366 seconds (JVM running for 1123.716)
+2022-05-17 14:33:21,945 INFO com.netflix.discovery.DiscoveryClient [Thread-19] Saw local status change event StatusChangeEvent [timestamp=1652778201945, current=DOWN, previous=UP]
+2022-05-17 14:33:21,946 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_FLIGHT-BOOKING/host.docker.internal:Flight-Booking:8082: registering service...
+2022-05-17 14:33:21,950 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_FLIGHT-BOOKING/host.docker.internal:Flight-Booking:8082 - registration status: 204
+2022-05-17 14:33:21,976 INFO com.netflix.discovery.DiscoveryClient [Thread-19] Shutting down DiscoveryClient ...
+2022-05-17 14:33:24,993 INFO com.netflix.discovery.DiscoveryClient [Thread-19] Unregistering ...
+2022-05-17 14:33:24,997 INFO com.netflix.discovery.DiscoveryClient [Thread-19] DiscoveryClient_FLIGHT-BOOKING/host.docker.internal:Flight-Booking:8082 - deregister  status: 200
+2022-05-17 14:33:25,001 INFO com.netflix.discovery.DiscoveryClient [Thread-19] Completed shut down of DiscoveryClient
+2022-05-17 14:33:25,272 INFO FlightBooking.FlightBookingApplication [restartedMain] Starting FlightBookingApplication using Java 17.0.1 on LAPTOP-QM5VIR48 with PID 9928 (C:\Users\Asus\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\Flight Mnagement System\FlightBooking\target\classes started by Asus in C:\Users\Asus\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\Flight Mnagement System\FlightBooking)
+2022-05-17 14:33:25,272 INFO FlightBooking.FlightBookingApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2022-05-17 14:33:26,104 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2022-05-17 14:33:26,105 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-05-17 14:33:26,187 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-05-17 14:33:26,216 INFO org.mongodb.driver.cluster [restartedMain] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-05-17 14:33:26,245 INFO org.mongodb.driver.connection [cluster-rtt-ClusterId{value='628364de8943e074e643aa15', description='null'}-localhost:27017] Opened connection [connectionId{localValue:12, serverValue:32}] to localhost:27017
+2022-05-17 14:33:26,246 INFO org.mongodb.driver.connection [cluster-ClusterId{value='628364de8943e074e643aa15', description='null'}-localhost:27017] Opened connection [connectionId{localValue:11, serverValue:33}] to localhost:27017
+2022-05-17 14:33:26,247 INFO org.mongodb.driver.cluster [cluster-ClusterId{value='628364de8943e074e643aa15', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3416100}
+2022-05-17 14:33:27,303 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+2022-05-17 14:33:27,304 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2022-05-17 14:33:27,304 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Disable delta property : false
+2022-05-17 14:33:27,305 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2022-05-17 14:33:27,305 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Force full registry fetch : false
+2022-05-17 14:33:27,305 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application is null : false
+2022-05-17 14:33:27,305 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2022-05-17 14:33:27,305 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application version is -1: true
+2022-05-17 14:33:27,305 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2022-05-17 14:33:27,325 INFO com.netflix.discovery.DiscoveryClient [restartedMain] The response status is 200
+2022-05-17 14:33:27,326 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2022-05-17 14:33:27,327 INFO com.netflix.discovery.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-05-17 14:33:27,329 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1652778207329 with initial instances count: 5
+2022-05-17 14:33:27,330 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1652778207330, current=UP, previous=STARTING]
+2022-05-17 14:33:27,330 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_FLIGHT-BOOKING/host.docker.internal:Flight-Booking:8082: registering service...
+2022-05-17 14:33:27,357 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_FLIGHT-BOOKING/host.docker.internal:Flight-Booking:8082 - registration status: 204
+2022-05-17 14:33:27,586 INFO FlightBooking.FlightBookingApplication [restartedMain] Started FlightBookingApplication in 2.458 seconds (JVM running for 1394.581)
+2022-05-17 14:33:53,535 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8082-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-17 14:33:53,538 INFO FlightBooking.controller.bookingController [http-nio-8082-exec-1] getting Ticket: 748
+2022-05-17 14:33:53,541 INFO org.mongodb.driver.connection [http-nio-8082-exec-1] Opened connection [connectionId{localValue:13, serverValue:34}] to localhost:27017
+2022-05-17 14:38:27,315 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-17 14:43:27,317 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-17 14:48:27,333 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-17 14:53:27,343 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-17 14:58:27,350 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-17 15:03:27,353 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-17 15:08:27,359 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-17 15:13:27,367 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-17 15:18:27,368 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-17 15:23:27,372 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-17 15:28:27,377 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-17 15:33:27,394 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-17 15:38:27,468 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-17 15:39:20,743 INFO FlightBooking.controller.bookingController [http-nio-8082-exec-5] Making the booking  with pnr:73
+2022-05-17 15:39:21,208 INFO FlightBooking.controller.bookingController [http-nio-8082-exec-5] Made the booking  with pnr:73
+2022-05-17 15:43:27,493 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-17 15:48:27,506 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-17 15:53:27,520 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-17 15:58:27,535 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-17 16:03:27,537 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-17 16:08:27,548 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-17 16:13:27,550 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-17 16:18:27,554 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration

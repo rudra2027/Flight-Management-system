@@ -28,10 +28,12 @@ import FlightBooking.pojo.FlightData;
 import FlightBooking.pojo.Passenger;
 import FlightBooking.repository.BookingRepository;
 import FlightBooking.service.EmailService;
+import lombok.extern.slf4j.Slf4j;
 import reactor.core.publisher.Mono;
 
 @RestController
 @RequestMapping("/FlightBooking")
+@Slf4j
 @CrossOrigin(origins = "*", maxAge = 3600)
 public class bookingController {
 	
@@ -61,41 +63,54 @@ EmailService emailService;
 
 // For user to book flight and amount being set according to seat-passenger details
 
-@PostMapping("/BookFlight/")
-public String bookFlight(@RequestBody Booking booking)
-{
+@PostMapping("/BookFlight/{mailId}")
+public String bookFlight(@RequestBody Booking booking,@PathVariable("mailId") String mailId)
+{	log.info("Making the booking  with pnr:"+booking.getBooking_id());
+
 	booking.setTotal_amount(setTotal_amount(booking));
+	boolean present=book_repo.findById(booking.booking_id).isPresent();
+	if(present==false) {
+	log.info("Made the booking  with pnr:"+booking.getBooking_id());
 	book_repo.save(booking);
 	/* return "Booking made with PNR:"+booking.getBooking_id(); */
-	return emailService.sendEmail(booking);
+	
+	return emailService.sendEmail(booking,mailId);}
+	log.error("Booking Already present");
+	return"Booking Already Made";
 }
 
-// For User+Admin to get Details of booking (booking_id=PNR)
+// For User+Attendee to get Details of booking (booking_id=PNR)
 
 @GetMapping("/BookedFlight/{booking_id}")
 public Optional<Booking> getBooking (@PathVariable("booking_id") long booking_id){
-	return book_repo.findById(booking_id);
-	
+try {	log.info("getting Ticket: "+booking_id);
+	return book_repo.findById(booking_id);}
+catch(Exception e){
+	log.error(e.toString());
+return book_repo.findById(booking_id) ;}
+
 }
 
 //error:-string to date 
 //Admin to get all bookings on the date
 @GetMapping("/Booking/{date}/{flight_id}")
 public List<Booking>getBookingByDate(@PathVariable Date date,@PathVariable int flight_id){
+	log.info("getting Ticket: "+flight_id);
 	return book_repo.findByDate(date);
 }
 
 // For user to Cancel Booking OR Self Check-In 
-@PutMapping("/booking/{booking_id}")
-public Booking updateBooking(@RequestBody Booking booking,@PathVariable("booking_id") long pnr) {
+@PutMapping("/booking/{booking_id}/{mailId}")
+public Booking updateBooking(@RequestBody Booking booking,@PathVariable("booking_id") long pnr,@PathVariable("mailId") String mailId) {
 	Booking dbResponse=book_repo.findById(pnr).get();
 	dbResponse.setBooking_cancelled(booking.isBooking_cancelled());
 	dbResponse.setChecked_in(booking.isChecked_in());
+	log.info("Saving Changes In Booked Ticket Of Booking Cancelled/ CheckIn: "+pnr);
 	book_repo.save(dbResponse);
 
-	 if(booking.checked_in==true) {System.out.println("checked in");return emailService.checkIn(dbResponse);}
+	 if(booking.checked_in==true) {System.out.println("checked in");log.info("Updated CheckIn Status");return emailService.checkIn(dbResponse,mailId);}
 	  if(booking.booking_cancelled==true)
-	  {booking.setChecked_in(false);System.out.println("Booking Cancelled");return emailService.bookingCancelled(dbResponse);}
+	  {booking.setChecked_in(false);System.out.println("Booking Cancelled");log.info("Updated Booking Cancelled Status");return emailService.bookingCancelled(dbResponse,mailId);}
 	return dbResponse;
 	 
 }

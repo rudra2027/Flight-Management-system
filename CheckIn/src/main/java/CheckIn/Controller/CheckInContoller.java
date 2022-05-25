@@ -33,15 +33,15 @@ public class CheckInContoller {
 	
 	//Put Booking checkIn=true for  updating the Checked-In status
 	
-	@PutMapping("/booking/{booking_id}")
+	@PutMapping("/booking/{booking_id}/{mailId}")
 	
 	/* @HystrixCommand(fallbackMethod = "UpdateBookingFallback") */
-	 	public String updateBooking (Booking booking,@PathVariable("booking_id") long pnr) throws InterruptedException {
+	 	public String updateBooking (Booking booking,@PathVariable("booking_id") long pnr,@PathVariable("mailId") String mailId) throws InterruptedException {
 		booking.setChecked_in(true);
-	restTemplate.put("https://Flight-Booking/FlightBooking/booking/"+pnr, booking);
+	restTemplate.put("https://Flight-Booking/FlightBooking/booking/"+pnr+"/"+mailId, booking);
 	/* return"Checked In Successfully:"+pnr ; */
 	 Thread.sleep(3000);
-	return emailService.sendEmail(booking);
+	return emailService.sendEmail(booking,mailId);
 		
 	}
 	

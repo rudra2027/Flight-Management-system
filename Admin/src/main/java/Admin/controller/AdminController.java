@@ -84,7 +84,6 @@ public String updateFlight(@RequestBody Flight flight,@PathVariable("id") int fl
 private String UpdateFlightFallback(Flight flight,int flights_id){
 	return "Request fails. It takes long time to response";
 	 
-	
 	}
 
 //cancellation of particular flight(messaging)

@@ -1,4 +1,4 @@
-content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.lang.Enum"><rhs name\="com.fasterxml.jackson.annotation.JsonFormat$Shape"/></lhs><lhs name\="java.lang.constant.Constable"><rhs name\="com.fasterxml.jackson.annotation.JsonFormat$Shape"/></lhs><lhs name\="ChekIn.pojo.Booking"><rhs name\="ChekIn.pojo.Booking"/></lhs></history>
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.lang.Enum"><rhs name\="com.fasterxml.jackson.annotation.JsonFormat$Shape"/></lhs><lhs name\="java.lang.constant.Constable"><rhs name\="com.fasterxml.jackson.annotation.JsonFormat$Shape"/></lhs><lhs name\="ChekIn.pojo.Booking"><rhs name\="ChekIn.pojo.Booking"/></lhs><lhs name\="FlightSearch.pojo.FlightData"><rhs name\="FlightSearch.pojo.FlightData"/></lhs></history>
 content_assist_number_of_computers=15
 content_assist_proposals_background=255,255,255
 content_assist_proposals_foreground=0,0,0

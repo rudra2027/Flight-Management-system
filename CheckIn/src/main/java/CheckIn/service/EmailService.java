@@ -15,12 +15,12 @@ public class EmailService {
 	@Autowired
 	JavaMailSender javaMailSender;
 
-	public String sendEmail(Booking booking) {
+	public String sendEmail(Booking booking,String mailId) {
 		SimpleMailMessage message = new SimpleMailMessage();
 		
 		message.setFrom("rudransh3067@gmail.com");
 		//Taking user mail via Rest Template from user Db/Security Microservice
-		message.setTo("rudra1234ag@gmail.com");
+		message.setTo(mailId);
 		message.setSubject("CheckIn Confirmation Mail");
 		message.setText("CheckIn Successful"+booking.getBooking_id() );
 		
