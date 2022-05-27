@@ -1,0 +1,98 @@
+body {
+    background-image: url('./assets/ap1.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: row-reverse;
+    background-position-y: -230px;
+}
+
+.submit-form {
+    width: 632px;
+    margin: 0 auto;
+    padding: 21px;
+    display: flex;
+    flex-direction: column;
+    background-color: #CBE4FE;
+    float: left;
+    margin-left: 24px;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    font-family: 'Nanum Gothic';
+    padding-bottom: 10px;
+    font-size: 1.25em;
+}
+
+input,
+textarea,
+select {
+    border-radius: 2px;
+    border: 1px solid #777;
+    box-sizing: border-box;
+    font-size: 1.25em;
+    font-family: 'Nanum Gothic';
+    padding: 10px;
+    color: aliceblue;
+    background-color: #20456c;
+}
+
+div.elem-group.inlined input {
+    width: 40%;
+    display: inline-block;
+}
+
+hr {
+    border: 1px double #20456c;
+}
+
+.submit-form .btn {
+    width: 290px;
+    color: white;
+    text-align: center;
+}
+
+.form-control {
+    width: 290px;
+}
+
+.container2 {
+    background-color: #20456c;
+    width: 100.3%;
+    height: 210px;
+    text-align: center;
+    position: absolute;
+    left: 0px;
+    bottom: -114px;
+}
+
+.icon {
+    margin: 30px;
+    cursor: pointer;
+}
+
+#footer_img {
+    display: inline-block;
+    float: left;
+}
+
+#footer_img h2 {
+    position: relative;
+    right: -76px;
+    top: -57px;
+    color: aliceblue;
+    font-weight: bolder;
+}
+
+.container2 #footer_img img {
+    border-radius: 50%;
+    float: left;
+    height: 68px;
+    width: 72px;
+    border-style: double;
+}
+
+.icon:hover {
+    color: #C1DCF9;
+}

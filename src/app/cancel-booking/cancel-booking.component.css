@@ -1,0 +1,93 @@
+    .form {
+        width: 433px;
+        text-align: center;
+        background-color: #385b5f;
+        position: relative;
+        right: -1080px;
+        font-size: 38px;
+        color: aliceblue;
+        height: 432px;
+        border-radius: 10px;
+    }
+    
+    input {
+        width: 300px;
+        margin-left: 58px;
+    }
+    
+    #btn2 {
+        padding: 2px;
+        display: flex;
+        justify-content: center;
+        border-radius: 5px;
+        background-color: #CBE4FE;
+        margin-left: 106px;
+        font-size: 28px;
+        margin-top: 60px;
+        margin-bottom: 10px;
+    }
+    
+    #btn2:hover {
+        background-color: #C1DCF9;
+    }
+    
+    label {
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+    
+    .alert {
+        height: 46px;
+        width: 367px;
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    body {
+        background-image: url("./assets/ap3.jpg");
+        background-size: cover;
+        display: flex;
+        background-position-y: bottom;
+        height: 100%;
+    }
+    
+    .container2 {
+        background-color: #20456c;
+        width: 100.3%;
+        height: 210px;
+        margin-left: 20px;
+        text-align: center;
+        position: absolute;
+        bottom: -10px;
+        right: 1px;
+    }
+    
+    .icon {
+        margin: 30px;
+        cursor: pointer;
+    }
+    
+    #footer_img {
+        display: inline-block;
+        float: left;
+    }
+    
+    #footer_img h2 {
+        position: relative;
+        right: -76px;
+        top: -57px;
+        color: aliceblue;
+        font-weight: bolder;
+    }
+    
+    .container2 #footer_img img {
+        border-radius: 50%;
+        float: left;
+        height: 68px;
+        width: 72px;
+        border-style: double;
+    }
+    
+    .icon:hover {
+        color: #C1DCF9;
+    }

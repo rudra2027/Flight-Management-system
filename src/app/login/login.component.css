@@ -1,0 +1,78 @@
+.container {
+    text-align: center;
+    max-height: fit-content;
+    max-width: 313px;
+    position: absolute;
+    right: 280px;
+    top: 200px;
+    background-color: #fcfff5;
+}
+
+.card {
+    border-style: none;
+    background-color: #fcfff5;
+}
+
+.image {
+    background-image: url(./assets/flight1.gif);
+    background-repeat: no-repeat;
+    margin-left: 150px;
+    max-width: inherit;
+    height: 499px;
+    margin-top: -21px;
+}
+
+body {
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: #fcfff5;
+}
+
+.btn:hover {
+    background-color: #8bd1f2;
+}
+
+img {
+    height: 264px;
+}
+
+.container2 {
+    background-color: #fcfff5;
+    width: 100.3%;
+    height: 210px;
+    margin-left: 0px;
+    text-align: center;
+    position: absolute;
+    bottom: -50px;
+}
+
+.icon {
+    margin: 30px;
+    cursor: pointer;
+}
+
+#footer_img {
+    display: inline-block;
+    float: left;
+}
+
+#footer_img h2 {
+    position: relative;
+    right: -76px;
+    top: -57px;
+    color: black;
+    font-weight: bolder;
+}
+
+.container2 #footer_img img {
+    border-radius: 50%;
+    float: left;
+    height: 68px;
+    width: 72px;
+    border-style: double;
+}
+
+.icon:hover {
+    color: #C1DCF9;
+}

@@ -1,0 +1,7 @@
+.occupied {
+    fill: red;
+}
+
+.free {
+    fill: #afafaf;
+}

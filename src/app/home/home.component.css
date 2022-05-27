@@ -1,0 +1,188 @@
+.container {
+    background-image: url(./assets/flight2.gif);
+    background-repeat: no-repeat;
+    margin-left: 20px;
+    max-width: inherit;
+    height: 499px;
+    margin-top: -21px;
+}
+
+.container2 {
+    background-color: #20456c;
+    width: 96.3%;
+    height: 210px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.icon {
+    margin: 30px;
+    cursor: pointer;
+}
+
+#footer_img {
+    display: inline-block;
+    float: left;
+}
+
+#footer_img h2 {
+    position: relative;
+    right: -76px;
+    top: -57px;
+    color: aliceblue;
+    font-weight: bolder;
+}
+
+.container2 #footer_img img {
+    border-radius: 50%;
+    float: left;
+    height: 68px;
+    width: 72px;
+    border-style: double;
+}
+
+.icon:hover {
+    color: #C1DCF9;
+}
+
+.banner {
+    display: flex;
+}
+
+
+/* Search Form */
+
+* {
+    box-sizing: border-box;
+}
+
+#search-form {
+    border: none;
+    width: 700px;
+    position: absolute;
+    right: 16px;
+    height: 479px;
+    background-color: #CBE4FE;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+#header {
+    height: 80px;
+    background: #07f;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#header h1 {
+    color: #FFF;
+    margin-left: 20px;
+    font-size: 1.3em
+}
+
+.flight {
+    padding: 20px;
+}
+
+.flight input,
+select {
+    color: #565555;
+}
+
+.info-box {
+    padding: 10px 0;
+    margin-top: 41px;
+    flex: 1;
+    border-right: 0px solid transparent;
+}
+
+.info-box:last-child {
+    border-right: none;
+}
+
+.info-box label {
+    display: block;
+    color: #6B6A6A;
+    font-size: .9em;
+}
+
+.info-box input[type=text],
+input[type=submit],
+select {
+    border: none;
+    outline: none;
+    background: #C1DCF9;
+    width: 100%;
+    padding: 5px;
+    height: 30px;
+    border-radius: 3px;
+}
+
+#flight-info {
+    display: flex;
+    border-bottom: 1px dotted silver;
+}
+
+#btn1 {
+    background: #4388DB;
+    color: white;
+    padding: 10px;
+    height: 50px;
+    font-size: 1.2em;
+    position: absolute;
+    bottom: 9px;
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+#flight-depart {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dotted silver;
+}
+
+#flight-depart .info-box {
+    position: relative;
+    margin: 5px;
+}
+
+.info-box #leave-date {
+    background: #C1DCF9;
+    margin-top: 7px;
+    width: 658px;
+    text-align: center;
+    border-style: none;
+}
+
+#btn1:hover {
+    background-color: #3b77c0;
+}
+
+.Data {
+    background-color: #CBE4FE;
+    width: 96.3%;
+    height: auto;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.table {
+    border-radius: 5px;
+    background-color: #5094e1;
+}
+
+#btn2 {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #CBE4FE;
+}
+
+#btn2:hover {
+    background-color: #C1DCF9;
+}

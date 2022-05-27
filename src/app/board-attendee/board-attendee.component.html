@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <label class="Ticket">
+        <input [value]="1" [(ngModel)]="isVisible" name="isVisible" type="radio" [checked]="isSelected"/> Check Ticket
+      </label>
+
+        <label class="Checkin">
+        <input [value]="0" [(ngModel)]="isVisible" name="isVisible" type="radio" [checked]="isSelected" /> Check In
+        </label>
+
+        <div class="showTicket" *ngIf="isVisible == 1">
+
+            <form name="form1" (ngSubmit)="getTicket()" class="form">
+                <label style="margin-right:40px">Please Enter PNR Number: </label>
+                <input type="number" name="booking_id" required minlength="3" [(ngModel)]="form1.booking_id" #booking_id="ngModel">
+                <br>
+                <div *ngIf="booking_id.invalid && (booking_id.dirty || booking_id.touched)" class="alert">
+
+                    <div *ngIf="booking_id.errors?.['required']" style="color:red;font-size: larger;position:relative;top:-100px">
+                        Id is required.
+                    </div>
+                    <div *ngIf="booking_id.errors?.['minlength']" style="color:red;font-size: larger;position:relative;top:-100px">
+                        ID must be of 3 digit .
+                    </div>
+                </div>
+                <div class="data" style="position:absolute;left:2px;top: 334px;background-color: floralwhite;">
+                    <table class="table">
+                        <thead *ngFor="let booking of res">
+
+                            <th>PNR:
+                                <tr>
+                                    <td>{{booking.booking_id}}</td>
+                                </tr>
+                            </th>
+
+
+                            <th>Departure Date:
+                                <tr>
+                                    <td>{{booking.departure_date}}</td>
+                                </tr>
+                            </th>
+
+                            <th>Booking Date:
+                                <tr>
+                                    <td> {{booking.booking_date}}</td>
+                                </tr>
+                            </th>
+
+
+                            <th *ngFor="let passenger of booking.passenger">Passenger:
+                                <tr>
+                                    <td>Passenger id: {{passenger.passenger_id}}</td>
+                                    <td>Passenger name:{{passenger.passenger_name}}</td>
+                                    <td>Passenger age:{{passenger.passenger_age}}</td>
+                                    <td>passenger seat:{{passenger.passenger_seat}}
+                                    </td>
+                                </tr>
+                            </th>
+                            <th *ngFor="let flight of booking.flight.flight">Flight:
+                                <tr>
+                                    <td> {{flight.flight_id}}
+
+                                    </td>
+                                </tr>
+                            </th>
+
+                        </thead>
+                    </table>
+                </div>
+                <br>
+                <button type=" submit " class="btn " *ngIf="form1.booking_id>99">Get Ticket</button>
+            </form>
+
+        </div>
+
+        <div class=" CheckIn " *ngIf="isVisible==0 ">
+
+
+            <form name="form2 " (ngSubmit)="Checkedin()" class="form">
+                <label style="margin-right:40px">Please Enter PNR Number: </label>
+                <input type="number " name="booking_id" required minlength="3" [(ngModel)]=" form2.booking_id " #booking_id="ngModel">
+                <br>
+                <div *ngIf="booking_id.invalid && (booking_id.dirty || booking_id.touched)" class="alert">
+
+                    <div *ngIf="booking_id.errors?.['required']" style="color:red;font-size: larger;position:relative;top:-100px">
+                        Id is required.
+                    </div>
+                    <div *ngIf="booking_id.errors?.['minlength']" style="color:red;font-size: larger;position:relative;top:-100px">
+                        ID must be of 3 digit .
+                    </div>
+                </div>
+                <br>
+                <button type="submit " class="btn" *ngIf="form2.booking_id>99">CheckIn</button>
+                <div *ngIf=" checkedIn " class="alert alert-success " style="margin-top: 50px; ">
+                    {{message}}</div>
+            </form>
+
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

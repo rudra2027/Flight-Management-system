@@ -1,0 +1,46 @@
+    .showTicket {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .CheckIn {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .Checkin {
+        font-size: 29px;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-weight: bolder;
+        float: right;
+        position: relative;
+        right: 214px;
+    }
+    
+    .Ticket {
+        font-size: 29px;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-weight: bolder;
+        position: relative;
+        left: 214px;
+    }
+    
+    .container {
+        padding: 30px;
+        background-color: aliceblue;
+        height: 253px;
+        width: 100%;
+    }
+    
+    .btn {
+        background-color: black;
+        color: azure;
+        font-size: large;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    .form {
+        margin: 50px;
+    }

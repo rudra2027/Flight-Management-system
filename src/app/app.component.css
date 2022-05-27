@@ -1,0 +1,27 @@
+.nav-item .nav-link {
+    color: azure;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 10px;
+}
+
+.navbar-brand {
+    color: azure;
+    font-size: 30px;
+    font-weight: bolder;
+    display: inline;
+}
+
+.navbar {
+    text-align: center;
+}
+
+.icon img {
+    vertical-align: middle;
+    border-style: double;
+    border-radius: 50%;
+    width: 55px;
+    height: 53px;
+    margin-right: 14px;
+    margin-left: -7px;
+}
